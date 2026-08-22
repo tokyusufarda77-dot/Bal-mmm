@@ -8,13 +8,9 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
@@ -51,9 +47,9 @@ nav a{
   text-align:center;
   padding:80px 20px 40px;
   background:
-    radial-gradient(circle at 20% 30%,#ffd5e6,transparent 30%),
-    radial-gradient(circle at 80% 20%,#ffbad6,transparent 32%),
-    linear-gradient(135deg,#fff4fa,#ffb3d2);
+  radial-gradient(circle at 20% 30%,#ffd5e6,transparent 30%),
+  radial-gradient(circle at 80% 20%,#ffbad6,transparent 32%),
+  linear-gradient(135deg,#fff4fa,#ffb3d2);
 }
 
 .hero h1{
@@ -84,9 +80,7 @@ section{
   text-align:center;
 }
 
-.pink{
-  background:#fff0f7;
-}
+.pink{background:#fff0f7}
 
 .title{
   font:48px 'Great Vibes';
@@ -116,22 +110,24 @@ section{
 }
 
 /* FOTOĞRAFLAR */
+
 .gallery{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
+  width:100%;
   max-width:900px;
-  margin:auto;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
 }
 
 .gallery img{
   width:100%;
-  height:230px;
+  height:220px;
   object-fit:cover;
-  border-radius:18px;
   display:block;
+  border-radius:16px;
   background:#ffd1e2;
-  box-shadow:0 8px 25px #c93c7020;
+  box-shadow:0 6px 20px #c93c7020;
 }
 
 .quotes{
@@ -165,9 +161,7 @@ section{
   text-align:left;
 }
 
-.memory b{
-  color:#d52c70;
-}
+.memory b{color:#d52c70}
 
 footer{
   padding:70px 20px;
@@ -186,7 +180,7 @@ footer h2{
   color:#ef5792;
 }
 
-/* TABLET VE TELEFON */
+/* TELEFON */
 @media(max-width:600px){
 
   nav{
@@ -205,13 +199,18 @@ footer h2{
   }
 
   .gallery{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2,minmax(0,1fr));
     gap:10px;
   }
 
   .gallery img{
-    height:180px;
+    height:170px;
     border-radius:14px;
+  }
+
+  section{
+    padding-left:15px;
+    padding-right:15px;
   }
 }
 </style>
@@ -229,88 +228,50 @@ footer h2{
 
 <header class="hero" id="hikaye">
 <div>
-
 <div class="heart">♥️ ♥️ ♥️</div>
-
 <h1>Balımmm</h1>
-
 <p>Seninle başlayan en güzel hikâyem...</p>
-
 <div class="date">07 Nisan 2026</div>
-
 <p>Sevgililik tarihimiz ❤️</p>
-
 </div>
 </header>
-
 
 <section id="zaman">
 
 <h2 class="title">♥️ Birlikte Geçen Zamanımız ♥️</h2>
 
 <div class="cards">
-
-<div class="card">
-<div class="num" id="days">0</div>
-GÜN
-</div>
-
-<div class="card">
-<div class="num" id="hours">0</div>
-SAAT
-</div>
-
-<div class="card">
-<div class="num" id="minutes">0</div>
-DAKİKA
-</div>
-
-<div class="card">
-<div class="num" id="seconds">0</div>
-SANİYE
-</div>
-
+<div class="card"><div class="num" id="days">0</div>GÜN</div>
+<div class="card"><div class="num" id="hours">0</div>SAAT</div>
+<div class="card"><div class="num" id="minutes">0</div>DAKİKA</div>
+<div class="card"><div class="num" id="seconds">0</div>SANİYE</div>
 </div>
 
 <p>07 Nisan 2026'dan beri birlikteyiz. ❤️</p>
 
 </section>
 
-
 <section class="pink" id="fotolar">
 
 <h2 class="title">♥️ Fotoğraflarımız ♥️</h2>
-
 <p>Birlikte geçirdiğimiz güzel anılarımız... ❤️</p>
 
 <div class="gallery">
 
 <img src="IMG_9257.jpg" alt="Fotoğraf 1">
-
 <img src="IMG_6051_edit_2663861099844.jpg" alt="Fotoğraf 2">
-
 <img src="IMG_5950_edit_2672432411563.jpg" alt="Fotoğraf 3">
-
 <img src="IMG_5765_Original.jpg" alt="Fotoğraf 4">
-
 <img src="IMG_5765.heif" alt="Fotoğraf 5">
-
 <img src="IMG_5431.heif" alt="Fotoğraf 6">
-
 <img src="IMG_4378.heif" alt="Fotoğraf 7">
-
 <img src="IMG_4154_edit_2683040186563.jpg" alt="Fotoğraf 8">
-
 <img src="IMG_0118_edit_286979042844.jpg" alt="Fotoğraf 9">
-
 <img src="0efd08c7-b2f1-4fa2-bf28-cc1bb7df56e0.jpg" alt="Fotoğraf 10">
-
 <img src="foto1.jpg" alt="Fotoğraf 11">
 
 </div>
-
 </section>
-
 
 <section id="sozler">
 
@@ -318,30 +279,14 @@ SANİYE
 
 <div class="quotes">
 
-<div class="quote">
-“Sana baktığımda anlıyorum ki, neyin eksikmiş.” ❤️
-</div>
-
-<div class="quote">
-“Sen yanımdayken zaman duruyor, dünya güzelleşiyor.” ❤️
-</div>
-
-<div class="quote">
-“Hayatıma girdiğin için her gün yeniden şükrediyorum.” ❤️
-</div>
-
-<div class="quote">
-“İyi ki varsın balımmm, iyi ki benimlesin.” ❤️
-</div>
-
-<div class="quote">
-“Sen benim bugünüm, yarınım ve sonsuza kadarımsın.” ❤️
-</div>
+<div class="quote">“Sana baktığımda anlıyorum ki, neyin eksikmiş.” ❤️</div>
+<div class="quote">“Sen yanımdayken zaman duruyor, dünya güzelleşiyor.” ❤️</div>
+<div class="quote">“Hayatıma girdiğin için her gün yeniden şükrediyorum.” ❤️</div>
+<div class="quote">“İyi ki varsın balımmm, iyi ki benimlesin.” ❤️</div>
+<div class="quote">“Sen benim bugünüm, yarınım ve sonsuza kadarımsın.” ❤️</div>
 
 </div>
-
 </section>
-
 
 <section class="pink" id="anilar">
 
@@ -350,84 +295,71 @@ SANİYE
 <div class="timeline">
 
 <div class="memory">
-<b>07.04.2026 — Biz olduk ❤️</b>
-<br>
+<b>07.04.2026 — Biz olduk ❤️</b><br>
 Hikâyemizin başladığı o güzel gün.
 </div>
 
 <div class="memory">
-<b>İlk buluşmamız 🌸</b>
-<br>
+<b>İlk buluşmamız 🌸</b><br>
 Buraya ilk buluşmanızın tarihini ve anısını yaz.
 </div>
 
 <div class="memory">
-<b>Unutulmaz anımız ✨</b>
-<br>
+<b>Unutulmaz anımız ✨</b><br>
 Buraya birlikte yaşadığınız en güzel anılardan birini yaz.
 </div>
 
 <div class="memory">
-<b>Gelecekteki anılarımız ♾️</b>
-<br>
+<b>Gelecekteki anılarımız ♾️</b><br>
 Daha yaşayacağımız nice güzel günlere...
 </div>
 
 </div>
-
 </section>
-
 
 <footer>
 
 <h2>İyi ki varsın Balımmm ❤️</h2>
-
 <p>Seninle her gün, en güzel günüm...</p>
-
 <div style="font-size:45px">♡</div>
-
 <p>Seni çok seviyorum... ❤️</p>
 
 </footer>
 
-
 <script>
 
-// 07 Nisan 2026
-const start = new Date(2026, 3, 7, 0, 0, 0);
+const start = new Date(2026,3,7,0,0,0);
 
 function updateCounter(){
 
-  const now = new Date();
+const now = new Date();
 
-  let diff = now.getTime() - start.getTime();
+let diff = now.getTime()-start.getTime();
 
-  if(diff < 0) diff = 0;
+if(diff<0) diff=0;
 
-  const totalSeconds = Math.floor(diff / 1000);
+const totalSeconds=Math.floor(diff/1000);
 
-  const days = Math.floor(totalSeconds / 86400);
+const days=Math.floor(totalSeconds/86400);
 
-  const hours =
-    Math.floor((totalSeconds % 86400) / 3600);
+const hours=Math.floor((totalSeconds%86400)/3600);
 
-  const minutes =
-    Math.floor((totalSeconds % 3600) / 60);
+const minutes=Math.floor((totalSeconds%3600)/60);
 
-  const seconds =
-    totalSeconds % 60;
+const seconds=totalSeconds%60;
 
-  document.getElementById("days").textContent =
-    days.toLocaleString("tr-TR");
+document.getElementById("days").textContent=
+days.toLocaleString("tr-TR");
 
-  document.getElementById("hours").textContent =
-    String(hours).padStart(2,"0");
+document.getElementById("hours").textContent=
+String(hours).padStart(2,"0");
 
-  document.getElementById("minutes").textContent =
-    String(minutes).padStart(2,"0");
+document.getElementById("minutes").textContent=
+String(minutes).padStart(2,"0");
 
-  document.getElementById("seconds").textContent =
-    String(seconds).padStart(2,"0");
+document.getElementById("seconds").textContent=
+String(seconds).padStart(2,"0");
+
 }
 
 updateCounter();
